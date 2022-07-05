@@ -1,19 +1,20 @@
-//
 function vsComputer() {
 
-    let computerChoice = Math.floor(Math.random() * 3);
+    let outcome = '';
 
-    if (computerChoice === 0) {
-        value = 'scissors';
-    } else if (computerChoice === 1) {
-        value = 'paper';
-    } else if (computerChoice === 2) {
-        value = 'rock';
-    }
+    while (outcome != 'win') {
 
-    let mePlay = prompt('rock, paper or scissors?')
+        let computerChoice = Math.floor(Math.random() * 3);
 
-    while (outcome === 'undecided' || 'tie' || 'loss') {
+        if (computerChoice === 0) {
+            value = 'scissors';
+        } else if (computerChoice === 1) {
+            value = 'paper';
+        } else if (computerChoice === 2) {
+            value = 'rock';
+        }
+
+        let mePlay = prompt('rock, paper or scissors?')
 
         if ((mePlay === 'rock') && (value === 'rock')) {
             outcome = 'tie';

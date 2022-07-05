@@ -1,30 +1,3 @@
-function computerPlay() {
-
-    let computerChoice = Math.floor(Math.random() * 3);
-
-    if (computerChoice === 0) {
-        alert('scissors');
-    } else if (computerChoice === 1) {
-        alert('paper');
-    } else if (computerPlay === 2) {
-        alert('rock');
-    }
-}
-
-//
-function computerPlay() {
-
-    let computerChoice = Math.floor(Math.random() * 3);
-
-    if (computerChoice === 0) {
-        value = 'scissors';
-    } else if (computerChoice === 1) {
-        value = 'paper';
-    } else if (computerChoice === 2) {
-        value = 'rock';
-    }
-}
-
 //
 function vsComputer() {
 

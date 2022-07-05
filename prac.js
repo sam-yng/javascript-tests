@@ -130,3 +130,10 @@ while (condition < 5) {
     condition++;
 }
 
+// array
+const friends = ['Adam', 'Jackson', 'Tom'];
+//array that assigns values
+const enemies = new Array('Jeff', 'Larry', 'Tim');
+
+//access an array element
+let friend = friends[0];

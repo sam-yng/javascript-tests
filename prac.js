@@ -135,7 +135,7 @@ const friends = ['Adam', 'Jackson', 'Tom'];
 //array that assigns values
 const enemies = new Array('Jeff', 'Larry', 'Tim');
 
-//access an array element
+//access an array element (access the first array element)
 let friend = friends[0];
 
 const person = { firstName: "John", lastName: "Doe", age: 46 };
@@ -148,4 +148,18 @@ myArray[2] = myCars;
 
 friends.length //returns number of elements in array
 friends.sort() //sorts the array
+
+let length = friends.length
+
+// accessing the last array element
+let mate = friends[friends.length - 1];
+
+// add array elements
+friends.push("Max");
+// or
+friends[friends.length] = "Riley";
+
+// how to identify a variable as an array
+Array.isArray(friends);
+friends instanceof Array;
 

@@ -1,0 +1,112 @@
+body,
+html {
+    height: 100vh;
+}
+
+.Title {
+    text-align: center;
+    font-family: 'Sarabun-Regular';
+    padding-top: 30px;
+    font-size: 50px;
+    color: white;
+    opacity: 80%;
+    margin-bottom: 20px;
+}
+
+@font-face {
+    font-family: 'Oswald-Bold';
+    src: url('design/Oswald-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'cstdlit';
+    src: url('design/cstdlit.otf');
+}
+
+@font-face {
+    font-family: 'Sarabun-Regular';
+    src: url('design/Sarabun/Sarabun-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Sarabun-Medium';
+    src: url('design/Sarabun/Sarabun-Medium.ttf');
+}
+
+.bck {
+    background-image: url('design/bck.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+    opacity: 88%;
+}
+
+div {
+    color: white;
+}
+
+.header {
+    border: 1px rgb(255, 255, 255) solid;
+    border-color: white;
+    flex: 1;
+}
+
+.header2 {
+    border: 1px rgb(255, 255, 255) solid;
+    border-color: white;
+    flex: 2;
+}
+
+.header3 {
+    border: 1px rgb(255, 255, 255) solid;
+    border-color: white;
+    flex: 1;
+}
+
+.header4 {
+    border: 1px rgb(255, 255, 255) solid;
+    border-color: white;
+    flex: 1;
+}
+
+.topline {
+    display: flex;
+    text-align: center;
+    width: 95%;
+    margin-left: 27px;
+    font-family: 'Sarabun-Medium';
+}
+
+.firstRow {
+    display: flex;
+    text-align: center;
+    width: 95%;
+    margin-left: 27px;
+    font-family: 'cstdlit';
+}
+
+.cbttn {
+    padding-top: 25px;
+    max-height: max-content;
+    width: auto;
+
+}
+
+.timg {
+    max-width: 20%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: -80px;
+    padding-top: 20px;
+}
+
+button {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}

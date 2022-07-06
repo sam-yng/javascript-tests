@@ -137,3 +137,15 @@ const enemies = new Array('Jeff', 'Larry', 'Tim');
 
 //access an array element
 let friend = friends[0];
+
+const person = { firstName: "John", lastName: "Doe", age: 46 };
+// person.firstName retruns "John"
+
+// you can have objects, functions, and arrays in an ARRAY
+myArray[0] = Date.now;
+myArray[1] = myFunction;
+myArray[2] = myCars;
+
+friends.length //returns number of elements in array
+friends.sort() //sorts the array
+

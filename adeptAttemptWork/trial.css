@@ -1,0 +1,60 @@
+body,
+html {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    text-align: center;
+    animation: fadeIn 10s;
+    font-family: 'Sarabun-Regular';
+    color: white;
+    font-size: 30px;
+}
+
+.title:hover {
+    transform: scale(1.15);
+}
+
+@font-face {
+    font-family: 'Sarabun-Regular';
+    src: url('design/Sarabun/Sarabun-Regular.ttf');
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+table {
+    border: 1px solid black;
+}
+
+.container {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-bottom: 30px;
+}
+
+.cell {
+    border: 1px solid white;
+    padding: 100px;
+}
+
+.bck {
+    background-image: url(design/jksn.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: fadeIn 7s;
+}

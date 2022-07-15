@@ -1,15 +1,12 @@
 const title = document.querySelector('.title');
 
-const playerTurn = document.querySelector('.playerTurn');
+title.addEventListener('click', () => { clickTitle() })
+const clickTitle = () => alert('Youre a bum');
 
-function clickTitle() {
-    alert('Youre a bum');
-}
-
-title.addEventListener('click', () => { clickTitle() });
 
 let player = 'player1'
 
+const playerTurn = document.querySelector('.playerTurn');
 playerTurn.innerHTML = 'Player 1:';
 
 const boxss = document.querySelectorAll('.cell').forEach(box => {

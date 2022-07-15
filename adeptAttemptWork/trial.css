@@ -7,14 +7,15 @@ html {
 
 .title {
     text-align: center;
-    animation: fadeIn 10s;
+    animation: fadeIn 6s;
     font-family: 'Sarabun-Regular';
-    color: white;
+    color: black;
     font-size: 30px;
 }
 
 .title:hover {
     transform: scale(1.15);
+    cursor: grabbing;
 }
 
 @font-face {
@@ -45,16 +46,54 @@ table {
     margin-left: 200px;
     margin-right: 200px;
     padding-bottom: 30px;
+    animation: fadeIn 6s;
 }
 
 .cell {
-    border: 1px solid white;
+    border: 1px solid black;
     padding: 100px;
 }
 
+.cell:hover {
+    /* background: url(design/donkey.svg) no-repeat; 
+    background-size: cover; */
+    cursor: pointer;
+}
+
+/*
 .bck {
     background-image: url(design/jksn.png);
     background-size: 100%;
     background-repeat: no-repeat;
-    animation: fadeIn 7s;
+    animation: fadeIn 6s;
+}
+*/
+
+#box0,
+#box1,
+#box2 {
+    border-top: none;
+}
+
+#box0,
+#box3,
+#box6 {
+    border-left: none;
+}
+
+#box6,
+#box7,
+#box8 {
+    border-bottom: none;
+}
+
+#box2,
+#box5,
+#box8 {
+    border-right: none;
+}
+
+.playerTurn {
+    text-align: center;
+    animation: fadeIn 6s;
 }

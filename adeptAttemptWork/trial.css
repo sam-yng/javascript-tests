@@ -8,19 +8,24 @@ html {
 .title {
     text-align: center;
     animation: fadeIn 6s;
-    font-family: 'Sarabun-Regular';
+    font-family: 'Cougar';
     color: black;
     font-size: 30px;
 }
 
 .title:hover {
-    transform: scale(1.15);
+    transform: scale(1.05);
     cursor: grabbing;
 }
 
 @font-face {
     font-family: 'Sarabun-Regular';
     src: url('design/Sarabun/Sarabun-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Cougar';
+    src: url('design/Courgette-Regular.ttf');
 }
 
 @keyframes fadeIn {
@@ -41,12 +46,12 @@ table {
     display: grid;
     gap: 1px;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: 200px;
     margin-right: 200px;
     padding-bottom: 30px;
-    animation: fadeIn 6s;
+    animation: fadeIn 3s;
 }
 
 .cell {
@@ -60,15 +65,16 @@ table {
     cursor: pointer;
 }
 
-/*
-.bck {
-    background-image: url(design/jksn.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    animation: fadeIn 6s;
-}
-*/
 
+.bck {
+    background-image: url(design/bckimg.webp);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    animation: fadeIn 3s;
+    opacity: 80%;
+}
+
+/*
 #box0,
 #box1,
 #box2 {
@@ -92,8 +98,81 @@ table {
 #box8 {
     border-right: none;
 }
+*/
 
 .playerTurn {
     text-align: center;
     animation: fadeIn 6s;
+    margin-bottom: 10px;
+    font-family: 'Cougar';
+}
+
+
+.co1 {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    cursor: pointer;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    height: 36px;
+    line-height: 27px;
+    min-width: 54px;
+    padding: 0 16px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: pre;
+    margin: 10px;
+}
+
+.co1:hover {
+    border-color: #dadce0;
+    box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+    color: #202124;
+}
+
+.co1:focus {
+    border-color: #4285f4;
+    outline: none;
+}
+
+.co2 {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    cursor: pointer;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    height: 36px;
+    line-height: 27px;
+    min-width: 54px;
+    padding: 0 16px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: pre;
+    margin: 10px;
+}
+
+.co2:hover {
+    border-color: #dadce0;
+    box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+    color: #202124;
+}
+
+.co2:focus {
+    border-color: #4285f4;
+    outline: none;
+}
+
+
+.choosePlayer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }

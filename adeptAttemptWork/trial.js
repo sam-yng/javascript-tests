@@ -3,11 +3,38 @@ const title = document.querySelector('.title');
 title.addEventListener('click', () => { clickTitle() })
 const clickTitle = () => alert('Youre a bum');
 
+const mainPage = document.querySelector('.mainPage');
+const choosePlayer = document.querySelector('.choosePlayer');
+
+window.onload = function hidePage() {
+    if (mainPage.style.display === 'none') {
+        mainPage.style.display = 'block';
+    } else {
+        mainPage.style.display = 'none';
+    }
+};
+
+const bttnP = document.querySelector('.co1');
+
+bttnP.addEventListener('click', () => { pChoice() })
+const pChoice = () => choosePlayer.style.display = 'none';
+
+bttnP.addEventListener('click', () => { pDone() })
+const pDone = () => mainPage.style.display = 'block';
+
+const bttnP2 = document.querySelector('.co2');
+
+bttnP2.addEventListener('click', () => { pChoice2() })
+const pChoice2 = () => choosePlayer.style.display = 'none';
+
+bttnP2.addEventListener('click', () => { pDone2() })
+const pDone2 = () => mainPage.style.display = 'block';
 
 let player = 'player1'
 
 const playerTurn = document.querySelector('.playerTurn');
 playerTurn.innerHTML = 'Player 1:';
+
 
 const boxss = document.querySelectorAll('.cell').forEach(box => {
     box.addEventListener('click', function clickButton(event) {
@@ -24,14 +51,3 @@ const boxss = document.querySelectorAll('.cell').forEach(box => {
 });
 
 
-/*
-const box0 = document.querySelector('#box0');
-const box1 = document.querySelector('#box1');
-const box2 = document.querySelector('#box2');
-const box3 = document.querySelector('#box3');
-const box4 = document.querySelector('#box4');
-const box5 = document.querySelector('#box5');
-const box6 = document.querySelector('#box6');
-const box7 = document.querySelector('#box7');
-const box8 = document.querySelector('#box8');
-*/
